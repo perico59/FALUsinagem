@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site - Fabricio</title>
+</head>
+<body>
+    <header>
+        <div class="logoSite">
+            <img src="images/logoFalEpsPNG.png" alt="Logo Fal Usinagem EPS">
+        </div>
+        <nav>
+            <a href="#iQuartaPagina" class="navBarHeader" id="navBarSobreNos">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABu0lEQVR4nO2WvU4CQRDHT30BLUjsKXwGSxtj6UenPgCJL2CvaGNsjC2djZUJBQg8A4aZ8yNGY4zcLBfYOUIUK7JmAclBOLi73GlM/CfT3O7cb+e/c5cxjJillJplgl0dSqkZ46fUhQpU3bBg52+BmzYmpYBzSfDIAj+kgLokvKpXK0teOdpeDeRaZTuU1Y4F6yzgc3B6dxDWWJh7LSonjCjVtDGpKxwLHY6qbZuL7lwmLDDhuyRIBQZLwjMf0G5IgvQIuNhbg7vAYBb44BfMBKY717Fgow/OhQB73O14cGvYLUh3nRBwEBgsCe2wYF2pfq4rD1Nxzv8dY2k4F+/7nV8MUTFkAzRXdiQ3pbuaBVyHqBirvq0W+BYY4CUWcBoAfGJEKUlYmt5YWIgUqiXJXJsGbli4asQhJjz2BsN+LNBveYGNuMW/AW4QbnmBHcLNSGFKXc45AleY8EISdCb8ODp6j96rc0IDZQ2WJWFGTxkBvuHeIXqTSUa/wzewReUEC8gHhU3o9vzUyaT5CguS8Dk66OAanpyXm3lvewmPooa67D/0BLOA27jAPDKZjICxHRtYYNtnm/3LiFRfceH518oXv8YAAAAASUVORK5CYII=" alt="about-us-male">
+            </a>
+            <a href="#iSegundaPagina" class="navBarHeader" id="navBarProjetos">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNUlEQVR4nO2WwUoDMRCG9yUU9HUKXvRtbPUkePDkIwl6sAcPK1JnQJ/AGdl2RrBCSy+W1Oy6dDdsSNNc2h8CIdnk238mm50s23kp45kQ3CvhjzIMkwREGG6U8bfekjjVNWgSsBA8tIE3ax6pUoJpfLBHxDR0Ycd+uwtW134hYGG4dD0fDTzl0aEwPgtjbvrVOoLb6GBhfCyhSojVHCGascb4JmBhmAthvyjejv5DinkJrECN/p/zcDBhvzFH+GTC3OrSurcveB0MLmpOXbL5ztfz3bZfJ1gYJr5gH/k7JryzB2qQFDz5wJPqcDFejMfvx0nARkpwta2fhHZdSF+frz1lmMWAlveAF9hoVfo4Pq1QqQ9YGU4teCEE59/0cpAE7Kq/Yua80/mqJIpUnUgt53vtlW1LSyv4Tc3i3ZcZAAAAAElFTkSuQmCC" alt="group-of-projects">
+            </a>
+            <a href="#iQuintaPagina" class="navBarHeader" id="navBarContato">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/UlEQVR4nO2Zu2sUURSHxwc+EF8EGwstFCxMZauF+Ab/B0GwCYqPaGER7YSIgoVFLCJiZYiCjyZWBlSsRHfPmWTJFi6JmXM27N4zm1gIvq7c3Q3sa8jsZMzMyPxgWHbuOTP3u+fce8/MWFaqVKlSpYpS2rbXCcFtISBh1LE+CBwhHDR9bgMxDZF3kLsFwsEOIAmIBLdFhttBou5UwMNKQTj6KEgaEW4dCXjvMh4ulXKbF+jTDkXQL4SVREVEEX6ZmfmwsdW/Mg3bhTGXIBC45bWplil7JTEgwvZ5LxAhPPNfRESKeCnQzX1Iwo8IjnrdTDE8Tg4IwQ3PmxEOJCm1XmmtV7f6m3OmLTEgwqjLDp5o9Vdkn1ppCFl+rQVP2/3hWQJBUGutVwX1twJI/gWIIvyl9fjaRV8DpQh/JguE4Jsq4rlWf5fhrBAsJCG1poThgsjHrV6jVi7nt5idv2YbMxBF+EMYLnZacr2k9egas8vXfGMCIoQDfgHarklwMz4gjr0rOMjE7mV1lJaec/5BIjtgzC183qYIXiYKRBG8EYbrQjAsjEM6n19v+mV+hfGBED407TW7eIP0+0lXRXA11iCd6rdOMnaNfq6TPdBkEBmEeWlBOFAoFDZYPmTsqo8L9ZcdiuCPInzUBQhMu2wfYc5scovZo4qwEEI65ednJ3usAJqfnewx/tXrMNzzDWIgmkJchGMhgPxWnOkNAqI402v8heF7qZTb6RukNfSmVAkntWAkCIgQjNQGA+83N3QZEWE4HRLIk3BBCJyl5kh39n5Ta2J/uKlFS3/oaQIJIxqMU6FPdl399IaDXiOtGN82g8C7WC6/Ky2zkQnD60WgchGO+/FTDp5sSPextg0xKtVrqy5KFLxWXySGrThJCPt8FI1DtfPVonG8npJ9Vpwkjn3IY5UcMxO6Mf2a5qyDB604yTxzCCEqxufCcMd18LIinGt8sDL/zXlhvKsIXxh742fFXaXZ7D5h/FqH4aBlTCxUmcM9ZsmvzNl7/Tj8BRl9Y5TgvghkAAAAAElFTkSuQmCC" alt="new-contact">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="primeiraPagina" id="iPrimeiraPagina">
+            <div class="video-fundo">
+        <video autoplay loop muted playsinline>
+            <source src="images/Usinagem de isopor com robô - COMAC.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+        <div class="overlay"></div>
+        </div>
+
+        <div class="conteudo">
+        <h1><span class="destaque">Especialistas</span> em <br> Usinagem e Fibramento</h1>
+        <p> Solicite um orçamento agora mesmo</p>
+        </div>
+
+        <div class="botaoWhatsapp">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
+                style="fill:#eee7d3;">
+                <path d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"></path>
+                </svg>
+            </a>
+        </div>
+        </div>
+
+        <div class="segundaPagina" id="iSegundaPagina">
+            <h1>Conheça nosso trabalho</h1>
+
+            <section class="textoImagensProjetos">
+                <p>Fazemos recortes e pinturas em isopor de qualquer tamanho!</p>
+                <a href="#">Crie o seu ➝</a>
+            </section>
+
+            <section class="imagensProjetos">
+                <section class="primeiroProjeto">
+                    <img src="images/imagemProjeto1.png" alt="Projeto 1" id="image1">
+                    <section class="elementosImagem">
+                        <p class="tituloItem">Prim. Item</p>
+                        <p class="subtituloItem">Recorte</p>
+                    </section>
+                </section>
+                <section class="segundoProjeto">
+                    <img src="images/imagemProjeto2.png" alt="Projeto 2" id="image2">
+                    <section class="elementosImagem">
+                        <p class="tituloItem">Seg. Item</p>
+                        <p class="subtituloItem">Relevo + Pintura</p>
+                    </section>
+                </section>
+                <section class="terceiroProjeto">
+                    <img src="images/imagemProjeto3.png" alt="Projeto 3" id="image3">
+                    <section class="elementosImagem">
+                        <p class="tituloItem">Terc. Item</p>
+                        <p class="subtituloItem">Recorte + Fibramento</p>
+                    </section>
+                </section>
+            </section>
+        </div>
+
+        <div class="terceiraPagina" id="iTerceiraPagina">
+                <section class="colunaTexto">
+                    <h1>Já nos segue no <br> <span class="destaque">INSTAGRAM</span>?</h1>
+                    <p>Comece a nos seguir agora e fique por dentro <br> de todas nossas novidades.</p>
+                    <a href="https://www.instagram.com/fal_esculturas_eps_/?utm_source=ig_web_button_share_sheet" target="_blank"><img src="data:image/png;base64,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" alt="instagram-new--v1"></a>
+                </section>
+                <section class="colunaInstagram">
+                    <img src="images/iphoneInstagram.png" alt="Iphone com Instagram na tela">
+                </section>
+        </div>
+
+        <div class="quartaPagina" id="iQuartaPagina">
+            <section class="primeiraColuna">
+                    <img src="images/robousinando.jpg" alt="Robo Usinagem EPS">
+                </section>
+                <section class="segundaColuna">
+                    <section class="primeiraLinha">
+                        <section class="flexSep">
+                            <img src="data:image/png;base64,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" alt="settings">
+                            <section class="flexSepDois">
+                                <h2>Como funciona?</h2>
+                                <p>Um robô de usinagem em EPS realiza cortes</p>
+                            </section>
+                        </section>
+                        <p> precisos no material permitindo a produção de formas complexas com alta precisão e repetibilidade.</p>
+                    </section>
+
+                    <section class="segundaLinha">
+                        <section class="flexSep">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGkklEQVR4nO1cSY8bVRDuCREcQCACYRL3ex0lBIRALJcEkBJX2eMZPFU9EdtwRhxAwIElCSEbAQkICLGFE1zgDyBxAkFA4oAICQhB4MwWECBCgAOQdYyq7YmCx/b08nrzvE8qaeRxd1V9fl1v+147joWFhYWFhYWFhYWFhYWFhYVFaljVaFzgMTQU4X2a8BXF+J4m/EoRfqMYjyjG4x07Ip+1/wfvasY9co1cK/ewP1E3ABZrvzahCZ7VhAc0wUnN2Epkcg+C/YrhGT1ZHXemp89yFir0VO0qIUIx/pyY2HkNflcMr2of1jkLBCOaaxs0wyfpk9vX9mm/OiWxOEOIEY9hWjMezJHg7vLyhcdwuzMscLl6Waezyp/c3oR/KGXMKStWN5vnKMbdMkLQBghRBMcU4yN6Q6Mi5jFukc+M3ZvgqSunp892ygTdrF2qGD4z2fI8xi3dfuQzkz4U46cej61yygBNtTsUw1/GH/ENjcocX9K6DftRDH+6k3ibU2R0WtiMcZK5N9GK624qvoIc4HGngBhRBC/NmwDBScWwc7nf8NwmKEWwI+wEpVfp0ASPhp/A4HbxKb4lhjB+FeMLxRkG7nIWKYI3wrUU2Np9uRAQ6pEmOBY8MXE6Q8Ltsf0yvl4IskO1ZG7bCoJlWdTZMH69m9YvD3u9InjeyROacVuUhFdO1Ue77yEkpE20Cb8ytHTyGl1E7fgUwebu+wRj45SJVgSb5vgl2BzxPjMu1W51chgnxxnCnVCMG5c11y1VExNL5G/5LG2iZ/2Kz8A3waY4fhXhH97U+pUZzvjMTkZ0iUwmNZnMIGVanXeyOney4clUSa5Mjl2uGI7mnajOm2iCYyt8uCI1ohXDB3knqQtiinFvKiR31pNzT1AXyBRXbzHN84gm+LKnw2AqC1tlrCrWGTadKHFLPS45jI6PX9IZa2/rN11XjJ8bnTW2t5/6BQY7u7/fGba1SmkED83NB3b2+75HyAaJ7r/HJws13d9f7sPFpW3RExNL5ubT8Pr/MPixEZIrBNcNCmzBE83Ycqfq1yQmWpYKB7YAgh3DVDoU48Y5+RA+Ns91zyVjGWCxIvglzFqvLMIHnWF77aK0naGW6TrB5nYudTfMmrki+CmRSEdUPgVIvJXYCA5rhgdlFCEEBhsGJhRRZ5g3WavHJ1pkWuUm+JQolCo3j100JzeGrSZ9yS56AqLxQHlJxgPKr67pl1uUhf+Qti8WyaLINP146Wxa8WGPa3fLFtug/FIg+sTqZvP8yESL/HVYykQvmC4dseu0msT7h6VM/A+7nEWa8YF0nla414kKEXbnTiC3TTH+K5vAiutrR8fHz/V43YUiwdWEr4UpE7OQHyPNfkdijEx0gYSJh5LOvKScBPpoglMpx/pO5ODkyEIRWrKbhORdziJp8e1xdCYxH4wco2L4LmtVpzbxKM7G71fXyP6egRhC56sYv40caL9WkIWqU58OvL42TpmQ2m2qTETKl+BwZKL7ttKMVJ2asbV0Gs6LErMmvMd4mYiQr+ynpkp0WqrOpRGIlslCGjFEyVc4i0y0nGQyrurk9EqH24Qb0oghUr6xSseAzjC2qpOjEg0vh41XDn+mEkOEfGN1horg6zQC19GIPupy7dowu0Bp/dipD+9k8F2AwFvBhGUA2cFWG8GPBYhT7O3IRMtjW4DAW2IdddQeqcPSQYpV/OqNwVnxYrTkdpyELw73ohIXxWIsKsmSX/6BY6nMpWotMtHyeJo6jKkXgAlXsrLoxEFwQL0ASegSmGL4yIkLRfh03gnohaCZVj5C3gno0lh1fWyig20fwh/CCGhEMyEKzLjnQ3RBrPMaoY2n1aRyHnG+bS+C78Pu8vRv1fK6nIiHJYdPEgY75rlmdyKSAyeT1asHObEiR2wZe9+HInh/oRBd6SFXGCTbNXrEYpAGr6cQvV2nW6U0Hx+OJET3ccwY0W1nffbfOp2hKH/EhkVN6s3m01aT9t4WI9hvlOSAaIJmAUhoFcr82oRxogOyGd7KPTkuisGbTloIOgWCv/NPEvM1wn9SPxNuen9Qdcm9TMUp93IJr5d1ddOnfbN5pYS8ccbcCdpDRg7azAPZoRFfhkjem3gWGBbBRiXhb0lbspsByWeSnbRlK4ZfZSTiZAkZWydZr1YJ5F6xY06gkJVcjY+Zw0Jx7a4s5V5JkUD7MaMJ7nTyhGZ4Igu5lwmIz3hEF/MdeBYWFhYWFhYWFhYWFhYWFhZOTvgPhsB+c9GRyNEAAAAASUVORK5CYII=" alt="speedometer">
+                            <section class="flexSepDois">
+                                <h2>Quanto tempo?</h2>
+                                <p>O tempo para usinar um projeto</p>
+                            </section>
+                        </section>
+                        <p>em EPS com um robô varia conforme o tamanho e complexidade. Projetos mais simples podem ser concluídos em poucas horas, enquanto os mais detalhados podem levar de 1 a 3 dias.</p>
+                    </section>
+
+                    <section class="terceiraLinha">
+                        <section class="flexSep">
+                            <img src="data:image/png;base64,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" alt="bad-idea">
+                            <section class="flexSepDois">
+                                <h2>Quero fazer, e agora?</h2>
+                                <p>Tem uma ideia e quer transformar</p>
+                            </section>
+                        </section>
+                        <p>em realidade? Clique no botão abaixo e venha fazer um orçamento conosco.</p>
+                    </section>
+                    <a href="#"><img src="data:image/png;base64,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" class="botaoOrcamento" alt="budget"></a>
+                </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container2">
+            <img src="images/logoFalEpsPNG.png" alt="Logo Fal Usinagem" id="logoFooter">
+        </div>
+
+        <div class="container3">
+            <section>
+                <a href="https://www.instagram.com/fal_esculturas_eps_/?utm_source=ig_web_button_share_sheet" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHe0lEQVR4nO1dWYxURRRtNSqaqHH7dt8S9zXqh8bgAm6JAbdvBRX/BQ3x1wVijILhG8cQCCH+CEj8YZeMytz7GnQAB4fpe3uYruphcBJBwzP3dSszxWugX7/3qt5yk5NMJt1ddevUepeqSqWUUkoppZRSSimllIzK2MjALYpgvmb8ShH8oAj2K0atCI9rRt8lKMLjrbrBfqmrZlgudT88svvmSpZFj+JdmnGpZjxku5F1bIBhzbhE1+HOShbE9/1zNMOzmmCb/cbDpMnZqghmi84VF2Wc4H5N8KP9hsJ0QbijWRu4t+KKDA0NzVCEnyvCf6w3DtuB6K4YPvMHBy+0SsaRw9WbFMPPthtEOwLF+NP4KN5ghYwGew8qhjHbjaAdQ7BDq+Gj6ZJRw6c046Rt5bWrIPyzUYcn0yGDqw9JgdaVZucxmfhIaa8ZygFl/SxAMTTG63B9ImTIDkIWLdtK6oxBMfYnsvuSra1t5XR2sTRWMsYJ7ivyOUP3CGm75kj1nvjMIUU8gXPMINgWCyGa8TnrynA+oGr4dO+EFMJQiCkBtsRhQvcLjEMN8uaMje29RNAkfEkRDPb0m/WBO6IT0vJnFJaM8WHvCrNN5H+acSTy7xJ80gshOXIuYVeQkdGpXRTDy1F/VzEcjOx2td0o2iJkiurYUXX/Zb389viod2PXhCiCt2w3iraIRmPw0qQIUQTzuiZEnPu2G0VbhCzgndpGprMeCfmya0JaERf2G0ZPBcFRzfidYnhPzkcyrY7/AZf7fv/5Avl7rAa3asbnNcNC+Wz7O1HK++3IyJ4rwxZ1RbCvNz1wUwRCcMg6ARz0phNtEuZGMdIFLuZgEYb17d/qpvwR+a5MXwHIm9MzGS1TyoHuCWFo2CZDM6yJM+RGzlWKYa1tvcTTGoWQYxZHxb5GHWZWEvR4SiCcRUL+6rrS1noQYd/ptpwSRKAJ39YE30iAhYzkINowiDiERhB0Qdgnnzmdc0imIE2wypaezhMSzO+EH4TVxfdXn6cYX20Hp531OtD6LGxVjK/4vn9uqJ4Ei0tCwsl4J7Qn12GmZtzbe6NBtcneE+Gdz1tQjpDp09QpI2N4ePtFmnFF/A0Fy2XnZXuknNU0Nb3XpFQ5wj6z7An6+WrNsCu5MmHnRO3Xq0JIWVVoQmQ3ZS7gEy0y9iRfPlRNUmShlzNCYQkxt7bDwTSV4MgwQbDTnL7Eq1dQQmBNSJkrUiOjDcWwzKyHYlxXKEKCXZVxAm/vpnwbMHdfwYm+ezNLdgkR25R5zohna4sRAVXznKIZNhSGENMbp+rea/bIwABiREyzTu4QQjBhLqRymrZPCG4OOQdN5p8QY7oS21TS87U+G0IITjT5l2uNjrIx94SIc2laOWIotEyGPknKfIOQRbknRDx9BiF9tonQ/3cWXDmtbnXvhdwTYibgu5SjqBj7p9at7Q7ONyGmn9oNzyT+R8jhqXUT00ruCfE97wJXPJP6DJ488eGXhHBJSDllcYGnLImlysqi3iC8LfeESBBbdra9Ay8WgBBY6PDBcN50QvD9IhCyfmo5EqrjiulEU/Uao7N8n39CCI5mwbhYq/VfXBTj4qmm7iDmyjYhMHea/vWB15MszylCzGmr5aCCqjVCCDHEQbWxMIQEpm7jFjZN8JittcR04TZHvLuL5sKVKWKtC0lCivALsx6K4Nuky3WOEIFEoU8tc2hoaIaE5qRGCOF2M+dE0cCsNMp2khBJCTBz+SYCc0UK6wmBZ1qeJXdQEf5eWELaDbPKLHtCSElypBBuD0tX04yr09LbXUJapCzukIq2LM5yZKGWNSMsNU4TfJimzm4TEsBbEFYP2QHFMoURYpPx8XBd4d209c0AIeEjRUTOCHKYlNN0twk7wXckYbRzwk6qIyNbhHBrTTld0r6E6kh0iGL8Wszl7TS2Y22Mtf6HK8VQaIb1nJr8D2ts6ZmxpE88EMvdUp10o4FZae2mYkv6dCH4QDGuk1NzXETINXtpHPqSSYu22IP0qYmbG8QAKeGd3eoRhIQGhkLY6IKZv63T/nxcrcFiDhejHywSb564WOWqC4lkEcjfgdtVPH3iXGr5M9y7gTvK1RryGo71inM+EfXymfkuVF7nEKrmvdk1IUW/wEwniMhPWrTfXLKugM4RIl/x1yIEl9hWQOcNhB9FJkTx7tutK8A5Qy/XxLoSEaJzAjOyJdooIZhtWxGdE5ge0h4u48cdtpXRRb9mfKpIhEj5XAX2+FxFfDa5QOSdPvu9DDMK+LSS0JNH/faVw4wBdplZY7FJkFPugFleZwSSANTk3ddVkpQxwgd6uJy4SJhUdXi4kobIo4nlW4bYmQyCo0lec9txpMiQdKAn+i5B3nlUo/hIxYYEyTblQu+fJAR2Jb5mnEnaudxLi3xOUYR/y9Y2sd1UFJGDTzEfEIMtcgNdxVVR5D0TVDLvo4Jxcyy2qbREzMzyAJY4ZPJDAhzUBB+LW6KSZZE3l8SPHARPE26S+3qD3YhD95zok40uEZAqeB5P6sqwTNXxjUjvRpVSSimllFJKKaWUUnFD/gVmYMq9dG9mHwAAAABJRU5ErkJggg==" class="redesFooter" alt="instagram-new--v1"></a>
+            </section>
+            <section>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/15362e/github.png" class="imgGitHub" alt="github"/>
+                <p id="devNicolas">Dev</p>
+            </section>
+            <section>
+                <a href="https://wa.me/5541996231006?text=Ol%C3%A1,%20entre%20em%20contato%20para%20saber%20mais%20sobre%20os%20projetos%20da%20FAL%20USINAGEM%20EPS"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGyElEQVR4nO2da2gdRRTH17fiC1R8YBWfIChYaq34Lr4QFVGxKq1Vio8KVVstCiqKIIgKxVIVHx9U1C8K2lrFqkWkIiISTe45m7YGNDXNnrM32Zm9SdE2fWTlbCqxj9y7tzu7szd3/zBfEu7OmV8ms2fOOTPXcUqVKlWqVKlSpUqVKlWqVDJF0ScHDBJeGDDepwleUYQrNCEowj8Uo1YMI2MNtfxs5+9WaIKX5TM1gunyjITdtZeCjZUpoYeLFMEXmmBIM0apGmFNEazUPi4M+jpPdtpZfX0/HaYJ52rC1YpgR2q4EzRFuF0TfqsJ7u7t7T3UaRdVq+4RMtM0gZcV3AmhMw4oxue17jjamayKoo6DFOMTikHlDXhP4KAUwWKxyZlM0l7lck2ItgHvpa0PfLjGaXXJmqgY3lAEowWAuvfZTTCqCJdFPT2HOK2okDtP0wQ/2wapEy8n+Gut6p7ltJLk39GIm8Y5N8JayO5VTiso9OBWzbDZOjTe15kdb4budIosRfBglj6xzgs2wQ7luQ84RVTowS3x5qAAoLQp2Ax3OEWSrGuKYYttONo0bIaRwMPrnCJoaKD77JZ88XHCRlirVfFMq5DF9xS3yDoMznpmY4dVP1s2I7Yh6LxgEy6ztq0u8o5PGwcNo5rgylwhR9H3ByrCiu3B67wbIeYaiJIonPVBs50WUOWxXCAPDq470kiok2BYEzwbMs6sEVwQR/gY3rENslFTDIMSU88ctGJ8Mj1krAnc3Z8dRdF+muHHwsMmWJxH+slPaeSoIrhhoj60795sG2TjiQKUaVoszvGlN/Sten1IBlsxbLAOs1HzYE6WoFenMxA2+z6c0LAfhqesg2w8lq8zKwlIG5lTDJ8m6WsTdx1f9NiJBNAGBtaeZBy01F0YmAUPJ+1PMX5kG6bJ8SRWXNyS0rCgiUSoquIl9kE2mNWMy43vBMUlS2tYjWB6M/1qArfgoLXR8jOphTNiHFWuaA40fmkbZoLJs8d+YJ8VFxzm7BIFGytTWiH3GDLMMwZaqjpNGKUIX0u8VDF8Yxtiokb4kjHQiuBzI6AZNsg2O0F/r1sHmHhM+JlB0AZDolR/ndbk3msbXpOTp9Mk6F5jhhGsrNuXVHsWAGDy8eCf5kCbrgCliTMVQdBzlGboa6EZPWgS9Ihh4zrr+Z8S3bMNsImxbDEHmnCbcSN9fLpenxLlazvQmmCTcQMJtwXszmhQuL6mrZYOTcDZGAprJZlQL4qnGbptw8zzZdiZoaHv1etb4tdFhm3Uvcs65qAI5tfrv9bnHqMZViV+JuHHw9764xS51yuC71pnw8LwaragcWujYsIoivZXDC80Sj5I+dbuy1HA3RfJ7jaTgh+TW3BjQSWuZzAMhf3u1Ma2uDMmrPcj9FU/njLRZxV3nScJBZNelNGgUuhVpuX1BtdVPL+RPeKDywHN/5/0in19z70syXhqPpyhGN43AtqrTDMCeXxg6QP/2iDs8ToQvEkxfCBlCs2OS3KYhQr8m0pl6eTLyHC92g9zY8J3C/MiHDcK5uedZQ49XGR8ILuOKaVH4i4wbpT4s5bOqHyVxQ0FsvNMsxwKi2rVPdHJQrayHkqihx7MSZI0aGIsN6azC1Y5WSkg93YboPU48N9CwtvEp04zDrndQDOuS2WPX5ntZKXIdQ/WjBttwtbSCFERPDTUv/bYZscQu3ZpM0YEXuZ3f5ipWEIzM5xwaxwe8CuzmbsObzxJ3AUmkhiK4HEna8mAsovmYZr2j2L8QbbEckw6Pvvow8Wy1GjGJaYqVMXPb/RHNSY5vlsAsJGV5uNCJy/t3AIbTwbogjdF0CU1J7mBHvTgnDaEPJr78TfN8Egbgl7q5K1c4x5chAa/iNeSK+TYTWqj9VkxhiF3ne7kLTkX2D6QYSTw4VrHhhThi20BmeKLUWZZgRyDZuyY/JBxu/LxfmuQxzLLrX9nkq4HmWGL9St+FONdk//FhzOtQjaR+tEFbrIkWr/S5z9pxv5JB5jis+lLc/eT69VETD7IWFEeXuoUSXIhSIqbEddogufGngF/WQcsJQ0+Lsw1QJRUzdS+xXfvM74tfqhU8Dt7JkXv0Yy/W5jBVTm6sbtNhZGkbTTj3xMPAHo045uSU0yaXorkXiaGWVIbkeV5wrHMPaySLEzhr54P/crVuwyAgBTjh1J3pj331LTPD+TcCuHc+AsQDFxWOPbtFrhcUleZlQRkIU34zNhZQ3hUcfe5WScVwn536s7CyiWSE4zrswlYAI6v+3J9vHxlCHTG/xWSwmKYJ7Vw5deDlCpVqlSpUqVKlSpVqpSTXP8CmZEaZWsIK6gAAAAASUVORK5CYII=" class="redesFooter" alt="whatsapp"></a>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
